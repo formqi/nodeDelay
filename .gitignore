@@ -1,0 +1,10 @@
+*.log
+*.cache
+*.csv
+*.dat
+*.seed
+*.out
+*.pid
+*.gz
+node_modules
+.idea/

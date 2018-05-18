@@ -1,0 +1,20 @@
+{
+  "name": "apib9b",
+  "version": "1.0.0",
+  "description": "apib9b",
+  "main": "index.js",
+  "dependencies": {
+    "fastify": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.yanzhilu.org:wboll/apib9b.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

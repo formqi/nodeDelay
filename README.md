@@ -1,2 +1,2 @@
 # fastifyTask
-A fast delay-based node delay task
+A fastify-based node delay task service
