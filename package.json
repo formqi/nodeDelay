@@ -4,7 +4,10 @@
   "description": "A fastify-based node delay task service",
   "main": "index.js",
   "dependencies": {
-    "fastify": "^1.4.0"
+    "debug": "^3.1.0",
+    "fastify": "^1.4.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+// const debug = require('debug')('apib9b:app');
+// debug('bootstrapping application');
+
+const fastify = require('fastify')({
+  logger: {
+    level: 'info' // trace, debug, info, info, warn, error
+  }
+});
+
+const Env = require('../src/config/env');
+const routes = require('../src/routes');
+
+const port = Env.PORT || 3000;
+const host = '0.0.0.0';
+
+// Regist router
+routes(fastify);
+
+// Run the server!
+const start = async () => {
+  try {
+    await fastify.listen(port, host);
+    console.info(`Server listening on http://${fastify.server.address().address}:${fastify.server.address().port}/`)
+  } catch (err) {
+    console.error(err)
+    process.exit(1)
+  }
+}
+start();
